@@ -31,5 +31,5 @@ jobs:
       run: |
           for i in ${{ steps.changed_files.outputs.added_modified }}; do
              # echo ${{ steps.changed_files.outputs.all }}
-             curl -sL --retry 3 https://purge.jsdelivr.net/gh/rtaserver/RakitanManager@${{ github.ref_name }}/$i
+             curl -sL --retry 3 https://purge.jsdelivr.net/gh/rizzz-X/RakitanManager@${{ github.ref_name }}/$i
           done
